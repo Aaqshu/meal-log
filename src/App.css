@@ -1,0 +1,71 @@
+/* Modern form and button styles */
+.modern-input .MuiOutlinedInput-root {
+  border-radius: 12px;
+  background: #fafbfc;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.modern-input .MuiOutlinedInput-notchedOutline {
+  border-radius: 12px;
+}
+.modern-input .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 0 0 2px #22a03d33;
+  border-color: #22a03d;
+}
+
+.modern-btn {
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  box-shadow: 0 2px 8px 0 #22a03d22;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.modern-btn:hover {
+  box-shadow: 0 4px 16px 0 #22a03d33;
+}
+
+.modern-food-item {
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px 0 #b3d8ff22;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  animation: fadeInUp 0.5s;
+}
+
+.modern-food-item:hover {
+  box-shadow: 0 6px 24px 0 #b3d8ff44;
+  border-color: #22a03d;
+}
+
+.modern-delete-btn {
+  transition: color 0.2s, background 0.2s;
+}
+.modern-delete-btn:hover {
+  color: #fff !important;
+  background: #e53935 !important;
+}
+
+.modern-link {
+  transition: color 0.2s;
+}
+.modern-link:hover {
+  color: #1565c0 !important;
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tada {
+  0% { transform: scale3d(1, 1, 1); }
+  10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
+  30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
+  40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  100% { transform: scale3d(1, 1, 1); }
+} 
